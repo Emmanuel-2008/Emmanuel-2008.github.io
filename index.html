@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMMA DEV - Frontend Developer Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="EMMA DEV" class="logo-img">
+            <span class="logo-text">EMMA DEV</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="gradient-text">EMMANUEl</span></h1>
+            <p>Crafting Beautiful & Interactive Web Experiences</p>
+            <a href="#contact" class="cta-button">Let's Work Together</a>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>What I Do Best</h2>
+        <div class="skills-grid">
+            <div class="skill-card" data-skill="html">
+                <div class="skill-icon">🌐</div>
+                <h3>HTML5</h3>
+                <p>Building semantic, accessible web structures</p>
+                <div class="skill-demo html-demo">
+                    <div class="html-tag">&lt;div&gt;</div>
+                    <div class="html-content">Hello World!</div>
+                    <div class="html-tag">&lt;/div&gt;</div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-skill="javascript">
+                <div class="skill-icon">🎯</div>
+                <h3>JavaScript</h3>
+                <p>Creating dynamic and interactive experiences</p>
+                <div class="skill-demo js-demo">
+                    <div class="code-line">const magic = () => {</div>
+                    <div class="code-line">  alert('JavaScript!');</div>
+                    <div class="code-line">}</div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-skill="css">
+                <div class="skill-icon">💎</div>
+                <h3>CSS3 & Animations</h3>
+                <p>Bringing designs to life with animations</p>
+                <div class="skill-demo css-demo">
+                    <div class="animated-box"></div>
+                    <div class="animated-circle"></div>
+                    <div class="animated-triangle"></div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-skill="responsive">
+                <div class="skill-icon">📱</div>
+                <h3>Responsive Design</h3>
+                <p>Perfect experiences across all devices</p>
+                <div class="skill-demo responsive-demo">
+                    <div class="device desktop"></div>
+                    <div class="device tablet"></div>
+                    <div class="device mobile"></div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-skill="performance">
+                <div class="skill-icon">⚡</div>
+                <h3>Performance</h3>
+                <p>Blazing-fast load times</p>
+                <div class="skill-demo performance-demo">
+                    <div class="speed-meter">
+                        <div class="needle"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="skill-card" data-skill="modern">
+                <div class="skill-icon">🎨</div>
+                <h3>Modern CSS</h3>
+                <p>Flexbox, Grid & advanced techniques</p>
+                <div class="skill-demo modern-demo">
+                    <div class="grid-item">1</div>
+                    <div class="grid-item">2</div>
+                    <div class="grid-item">3</div>
+                    <div class="grid-item">4</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-image">🛍️</div>
+                <div class="project-content">
+                    <h3>E-Commerce Website</h3>
+                    <p>Responsive online store with interactive galleries</p>
+                    <div class="project-tags">
+                        <span class="tag">HTML5</span>
+                        <span class="tag">CSS3</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">📊</div>
+                <div class="project-content">
+                    <h3>Interactive Dashboard</h3>
+                    <p>Data visualization with dynamic charts</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">CSS Grid</span>
+                        <span class="tag">APIs</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-image">🎮</div>
+                <div class="project-content">
+                    <h3>Interactive Game</h3>
+                    <p>Browser-based game with animations</p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Canvas</span>
+                        <span class="tag">CSS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get In Touch</h2>
+        <div class="contact-container">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="John Doe">
+            </div>
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="john@example.com">
+            </div>
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" placeholder="Tell me about your project..."></textarea>
+            </div>
+            <button class="submit-btn" onclick="handleSubmit()">Send Message</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 EMMA DEV. All rights reserved.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
